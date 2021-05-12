@@ -5,7 +5,8 @@ with payments as (
         orderid as order_id,
         amount,
         paymentmethod as payment_method,
-        id as id
+        id as payment_id,
+        status
     from dbt-tutorial.stripe.payment
 )
 select * from payments
